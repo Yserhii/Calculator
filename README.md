@@ -10,4 +10,4 @@ git clone https://github.com/Yserhii/Calculator.git && cd Calculator && open ex0
 </div>
 
 ## Implemented:
-- basic calculator functions
+- Basic calculator functions
