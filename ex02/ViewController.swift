@@ -22,17 +22,13 @@ class ViewController: UIViewController {
     var currenInput: Double {
         get {
             return Double(displayResLabel.text!)!
-        }
-        set {
-            
+        } set {
             let value = "\(newValue)"
             let valueArray = value.components(separatedBy: ".")
             
             if (valueArray.count > 1 && valueArray[1] == "0") {
                 displayResLabel.text = "\(valueArray[0])"
-            }
-            else
-            {
+            } else {
                 displayResLabel.text = "\(newValue)"
             }
             stillTyping = false
@@ -47,9 +43,7 @@ class ViewController: UIViewController {
        
         let number = sender.currentTitle!
         
-        print(number)
-        if (number == "0")
-        {
+        if (number == "0") {
             zeroFlag = 1
         }
         if (stillTyping && displayResLabel.text != "-0" && displayResLabel.text != "0"
@@ -57,8 +51,7 @@ class ViewController: UIViewController {
             if ((displayResLabel.text?.count)! < 18) {
                 displayResLabel.text = displayResLabel.text! + number
             }
-        }
-        else {
+        } else {
             displayResLabel.text = number
             stillTyping = true
         }
@@ -124,8 +117,7 @@ class ViewController: UIViewController {
         print(sender.currentTitle!)
         if (firstOperand == 0) {
             currenInput = currenInput / 100
-        }
-        else {
+        } else {
             secondOperand = firstOperand * currenInput / 100
         }
     }
@@ -140,10 +132,8 @@ class ViewController: UIViewController {
         if (stillTyping && !dotInPlace) {
             displayResLabel.text = displayResLabel.text! + "."
             dotInPlace = true
-        }
-        else if (!stillTyping && !dotInPlace) {
+        } else if (!stillTyping && !dotInPlace) {
             displayResLabel.text = "0."
         }
     }
 }
-

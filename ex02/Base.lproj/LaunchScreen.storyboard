@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUd-Yd-dHy">
-                                <rect key="frame" x="163.5" y="438" width="87" height="30"/>
+                                <rect key="frame" x="10" y="438" width="394" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by yserhii from UNIT Factory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzR-tS-co6">
-                                <rect key="frame" x="88" y="834" width="238" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by Yelanskyi Serhii" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzR-tS-co6">
+                                <rect key="frame" x="10" y="834" width="394" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,8 +35,10 @@
                         <constraints>
                             <constraint firstItem="XUd-Yd-dHy" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="60s-in-uMT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lzR-tS-co6" secondAttribute="bottom" constant="10" id="8Jk-gG-Qhb"/>
-                            <constraint firstItem="lzR-tS-co6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jwa-f9-M4V"/>
-                            <constraint firstItem="XUd-Yd-dHy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u0K-Vm-Gyc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XUd-Yd-dHy" secondAttribute="trailing" constant="10" id="IkQ-Xo-Zxw"/>
+                            <constraint firstItem="lzR-tS-co6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ZPn-ii-4g3"/>
+                            <constraint firstItem="XUd-Yd-dHy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ejF-2S-QPn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lzR-tS-co6" secondAttribute="trailing" constant="10" id="jqm-m4-94T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
